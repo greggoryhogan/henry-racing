@@ -60,7 +60,7 @@
       justify-content: flex-start;
       max-width: 98%;
       height: 100%;
-      padding: 100px 0 1rem;
+      padding: 100px 0 3rem;
       color: #fff;
     }
 
@@ -78,10 +78,11 @@
 
     .checkered {
       position: absolute;
-      bottom: 0;
+      top: 0;
       width: 100%;
-      height: 100vh;
+      height: 85%;
       background: repeating-conic-gradient(#000 0 25%, #fff 0 50%) 50% / 8.5rem 8.5rem;
+      z-index: -1;
     }
 
     .checkered::after {
@@ -109,6 +110,7 @@
       color: #fc9d00;
       font-size: 1.3em;
       transform: rotate(-5deg);
+      letter-spacing: 0.05em;
     }
 
     .racing-content {
@@ -133,6 +135,9 @@
       color: #fc9d00;
     }
     @media (max-width: 768px) {
+      .checkered {
+        height: 75%;
+      }
       .wrap {
         padding-top: 2rem;
         padding-bottom: 0;
@@ -145,12 +150,12 @@
 
       .henry-racing span {
         display: block;
-        margin: -12vw 0 -7vw;
+        margin: -12vw 0 -7.3vw -1.5vw;
       }
 
       .racing-content {
         margin-top: 1rem;
-        margin-bottom: 2.5rem;
+        margin-bottom: 3rem;
         font-size: 1.9rem;
         width: 80%;
       }
@@ -162,8 +167,6 @@
   </style>
 </head>
 <body>
-  <div class="checkered"></div>
-
   <div class="wrap">
     <img src="img/driver.webp" alt="Henry Racing driver">
 
@@ -175,6 +178,7 @@
       We compete with one goal &mdash; run up front.<br>
       Built on precision, driven by consistency, and fueled by a passion for American open-wheel racing, we take on some of the most historic tracks in the country at full speed. <span class="orange">No shortcuts. No backing off. Just racing.</span>
     </div>
+    <div class="checkered"></div>
   </div>
 </body>
 </html>
