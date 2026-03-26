@@ -289,6 +289,9 @@ footer {
     }
 }
 @media (max-width: 767px) {
+    .container {
+        max-width: 90%;
+    }
     header nav {
         flex-wrap: wrap;
         text-align: center;
@@ -312,7 +315,10 @@ footer {
         line-height: 3rem;
     }
     .hrt-callout {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
+    }
+    .hrt-callout p {
+        padding: 0;
     }
     .hrt-team-section {
         display: flex;
