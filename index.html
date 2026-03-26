@@ -8,177 +8,193 @@
   >
   <title>Home | Henry Racing Team</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Yellowtail&display=swap"
-    rel="stylesheet"
-  >
+  <link rel="preconnect" href="https://use.typekit.net" crossorigin>
+  <link rel="stylesheet" href="https://use.typekit.net/kkr6gyo.css">
+  <link rel="stylesheet" href="style.css">
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      padding: 0;
-      background: #000;
-      color: #fff;
-    }
-
-    a {
-      color: #fff;
-    }
-
-    a:hover {
-      color: #77b2e8;
-    }
-
-    p {
-      margin: 0;
-      font-family: "Source Sans 3", sans-serif;
-      font-size: 1.2rem;
-      line-height: 2rem;
-      font-weight: 400;
-      font-style: normal;
-      text-align: center;
-    }
-
-    img {
-      width: 200px;
-      max-width: 20%;
-      border: 10px solid #fff;
-      border-radius: 50%;
-    }
-
-    .wrap {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      width: 100%;
-      height: 100%;
-      padding: 50px 0 3rem;
-      color: #fff;
-    }
-
-    .bebas-neue-regular {
-      font-family: "Bebas Neue", sans-serif;
-      font-weight: 400;
-      font-style: normal;
-    }
-
-    .yellowtail-regular {
-      font-family: "Yellowtail", cursive;
-      font-weight: 400;
-      font-style: normal;
-    }
-
-    .checkered {
-      position: absolute;
-      top: 0;
-      width: 100%;
-      height: 85%;
-      background: repeating-conic-gradient(#000 0 25%, #fff 0 50%) 50% / 8.5rem 8.5rem;
-      z-index: -1;
-    }
-
-    .checkered::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 1) 5%,
-        rgba(0, 0, 0, 0.5) 50%,
-        rgba(0, 0, 0, 1) 95%
-      );
-    }
-
-    .henry-racing {
-      margin: 0;
-      font-size: 10vw;
-      line-height: 10vw;
-      text-align: center;
-    }
-
-    .henry-racing span {
-      display: inline-block;
-      margin: 0 -0.5vw 0 -4vw;
-      color: #fc9d00;
-      font-size: 1.3em;
-      transform: rotate(-5deg);
-      letter-spacing: 0.05em;
-    }
-
-    .racing-content {
-      width: 63vw;
-      max-width: 95%;
-      font-family: "Bebas Neue", sans-serif;
-      font-size: 3rem;
-      text-align: center;
-    }
-
-    .retro-box {
-      padding: 2rem;
-      color: #fff;
-      background: rgba(0, 0, 0, 0.8);
-      border: 2px solid #ff00cc;
-      box-shadow:
-        0 0 10px #ff00cc,
-        0 0 20px #ff00cc;
-    }
-    .orange {
-      display: block;
-      color: #fc9d00;
-    }
-    @media (max-width: 768px) {
-      .checkered {
-        height: 75%;
-      }
-      .wrap {
-        padding-top: 2rem;
-        padding-bottom: 0;
-      }
-
-      .henry-racing {
-        font-size: 15vw;
-        line-height: 21vw;
-      }
-
-      .henry-racing span {
-        display: block;
-        margin: -12vw 0 -7.3vw -1.5vw;
-      }
-
-      .racing-content {
-        margin-top: 1rem;
-        margin-bottom: 3rem;
-        font-size: 1.9rem;
-        width: 80%;
-      }
-
-      img {
-        border-width: 5px;
-      }
-    }
-  </style>
 </head>
 <body>
-  <div class="wrap">
-    <img src="img/driver.webp" alt="Henry Racing driver">
-
-    <h1 class="bebas-neue-regular henry-racing">
-      Henry <span class="yellowtail-regular">Racing</span> Team
-    </h1>
-
-    <div class="racing-content retro-box">
-      We compete with one goal &mdash; run up front.<br>
-      Built on precision, driven by consistency, and fueled by a passion for American open-wheel racing, we take on some of the most historic tracks in the country at full speed. <span class="orange">No shortcuts. No backing off. Just racing.</span>
+  <header id="hrt-header">
+    <div class="container">
+      <a href="https://henryracingteam.com/" title="Home" class="logo">
+        <h1>
+          <span>Henry Racing Team</span>
+          <img src="img/HRT_logo_white.png" alt="Henry Racing Team" />
+        </h1>
+      </a>
+      <nav class="impact">
+        <a href="#about-the-team">About the team</a>
+        <a href="#what-drives-us">What drives us</a>
+        <a href="#where-to-find-us">Where to find us</a>
+        <a href="#on-the-track">On the track</a>
+      </nav>
     </div>
-    <div class="checkered"></div>
-  </div>
+  </header>
+  <main>
+    <section class="hero">
+      <img src="img/HRT_header_dirtcar.jpg" alt="Henry Racing racecar moving fast" />
+      <div class="container">
+        <h2 class="impact"><span>Built for Speed.</span> <span>Backed by American Craftsmanship.</span></h2>
+      </div>
+    </section>
+    <section class="container hrt-callout">
+      <p>The Henry Racing Team is a Wisconsin-based performance-driven motorsports initiative rooted in precision, reliability, and American ingenuity. Inspired by the same commitment to quality and craftsmanship that defines our heritage, we bring that mindset to the track where performance matters and every detail counts.</p>
+    </section>
+    
+    <section id="about-the-team" class="container hrt-team-section">
+      <h2 class="impact">About the team</h2>
+      <img src="img/HRT_About.jpg" alt="Henry Racing Team racecar" loading="lazy" />
+      <div class="content">
+        <p>The Henry Racing Team was established to celebrate the spirit of American motorsports and the communities that keep it alive. From grassroots racing to competitive circuits, our focus is simple: show up prepared, perform with purpose, and represent the values of hard work, integrity, and excellence.</p>
+        <p>We partner with drivers, builders, and racing organizations who share our passion for precision engineering and relentless improvement. Whether it’s on asphalt, dirt, or anything in between, we believe in earning every inch.</p>
+      </div>
+    </section>
+
+    <section id="what-drives-us" class="container hrt-team-section reverse">
+      <h2 class="impact">What drives us</h2>
+      <img src="img/HRT_What.jpg" alt="Henry Racing Team racecar" loading="lazy" />
+      <div class="content">
+        <ul>
+          <li><strong>Performance First</strong><br>Built to compete, tuned to win.</li>
+          <li><strong>American-Made Mindset</strong><br>A commitment to quality, durability, and doing things the right way.</li>
+          <li><strong>Grassroots Focus</strong><br>Supporting local tracks, local talent, and the next generation of racers.</li>
+          <li><strong>Precision & Reliability</strong><br>Because performance means nothing without consistency.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="where-to-find-us" class="container hrt-team-section">
+      <h2 class="impact">Where to find us</h2>
+      <img src="img/HRT_Where.jpg" alt="Henry Racing Team racecar" loading="lazy" />
+      <div class="content">
+        <p>The Henry Racing Team participates in regional racing events, community showcases, and motorsports gatherings across the country. We’re proud to connect with fans, families, and fellow enthusiasts who share a passion for speed, engineering, and competition.</p>
+      </div>
+    </section>
+
+    <section id="on-the-track" class="container hrt-gallery-section">
+      <div class="gallery-header">
+        <h2 class="impact">On the track</h2>
+       <div class="gallery-navigation">
+        <button type="button" class="prev impact">Prev</button><button type="button" class="next impact">Next</button>
+      </div>
+      </div>
+      <div class="hrt-gallery">
+        <img src="img/gallery/HRT_Gallery_1.jpg" alt="Henry Racing Team racecar" loading="lazy" />
+        <img src="img/gallery/HRT_Gallery_2.jpg" alt="Henry Racing Team racecar" loading="lazy" />
+        <img src="img/gallery/HRT_Gallery_3.jpg" alt="Henry Racing Team racecar" loading="lazy" />
+        <img src="img/gallery/HRT_Gallery_4.jpg" alt="Henry Racing Team racecar" loading="lazy" />
+        <img src="img/gallery/HRT_Gallery_5.jpg" alt="Henry Racing Team racecar" loading="lazy" />
+        <img src="img/gallery/HRT_Gallery_6.jpg" alt="Henry Racing Team racecar" loading="lazy" />
+        <img src="img/gallery/HRT_Gallery_7.jpg" alt="Henry Racing Team racecar" loading="lazy" />
+        <img src="img/gallery/HRT_Gallery_8.jpg" alt="Henry Racing Team racecar" loading="lazy" />
+        <img src="img/gallery/HRT_Gallery_9.jpg" alt="Henry Racing Team racecar" loading="lazy" />
+        <img src="img/gallery/HRT_Gallery_10.jpg" alt="Henry Racing Team racecar" loading="lazy" />
+      </div>
+    </section>
+
+  </main>
+  <footer>
+
+  </footer>
+  <script>
+   
+    
+    
+    const header = document.getElementById("hrt-header");
+    const sections = document.querySelectorAll("section[id]");
+    const navLinks = document.querySelectorAll("nav a");
+
+    function getHeaderOffset() {
+      return header.offsetHeight;
+    }
+
+    function navClassToggle() {
+      header.classList.toggle("is-scrolled", window.pageYOffset > 70);
+    }
+
+    function updateActiveNav() {
+      const offset = getHeaderOffset() + 20;
+      let current = "";
+
+      const scrollPosition = window.scrollY + window.innerHeight;
+      const pageHeight = document.documentElement.scrollHeight;
+
+      // 🔥 If we're at (or very close to) the bottom → force last section
+      if (scrollPosition >= pageHeight - 5) {
+        current = sections[sections.length - 1].id;
+      } else {
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop - offset;
+          const sectionBottom = sectionTop + section.offsetHeight;
+
+          if (window.scrollY >= sectionTop && window.scrollY < sectionBottom) {
+            current = section.id;
+          }
+        });
+      }
+
+      navLinks.forEach(link => {
+        link.classList.toggle("active", link.getAttribute("href") === "#" + current);
+      });
+    }
+
+    function handleScroll() {
+      navClassToggle();
+      updateActiveNav();
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("load", handleScroll);
+    window.addEventListener("resize", handleScroll);
+
+    const gallery = document.querySelector('.hrt-gallery');
+    const slides = document.querySelectorAll('.hrt-gallery img');
+    const prevBtn = document.querySelector('.gallery-navigation .prev');
+    const nextBtn = document.querySelector('.gallery-navigation .next');
+
+    let currentIndex = 0;
+    const totalSlides = slides.length;
+
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    function updateSlider() {
+      gallery.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    function goToPrev() {
+      currentIndex = currentIndex > 0 ? currentIndex - 1 : totalSlides - 1;
+      updateSlider();
+    }
+
+    function goToNext() {
+      currentIndex = currentIndex < totalSlides - 1 ? currentIndex + 1 : 0;
+      updateSlider();
+    }
+
+    prevBtn.addEventListener('click', goToPrev);
+    nextBtn.addEventListener('click', goToNext);
+
+    gallery.addEventListener('touchstart', function(e) {
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    gallery.addEventListener('touchend', function(e) {
+      touchEndX = e.changedTouches[0].screenX;
+      handleSwipe();
+    }, { passive: true });
+
+    function handleSwipe() {
+      const swipeDistance = touchEndX - touchStartX;
+
+      if (Math.abs(swipeDistance) < 50) return;
+
+      if (swipeDistance > 0) {
+        goToPrev();
+      } else {
+        goToNext();
+      }
+    }
+</script>
 </body>
 </html>
