@@ -346,4 +346,12 @@ footer {
   main .hero img {
         opacity: .4;
     }
+    .gallery-navigation button {
+        background: #000;
+        color: #fff;
+    }
+    .gallery-navigation button::after,
+    .gallery-navigation button::before {
+        display: none!important;
+    }
 }
