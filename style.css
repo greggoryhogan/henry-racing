@@ -12,6 +12,13 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.25rem;
     line-height: 130%;
+    font-family: "roboto-extralight", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+strong {
+    font-family: "roboto", sans-serif;
+    font-weight: 600;
 }
 p {
     margin: 1rem 0;
@@ -292,12 +299,13 @@ footer {
     header nav {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        display: none;
     }
     header nav a {
         justify-self: center;
     }
     main .hero {
-        padding: 18rem 2rem 18rem;
+        padding: 15rem 2rem 18rem;
     }
     main .hero h2 {
         font-size: 2.5rem;
